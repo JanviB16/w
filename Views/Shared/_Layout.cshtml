@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - omas</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75bdc6b463.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div class="container">
+                <a href="#" class="navbar-brand mb-0 h1">
+                    <img class="d-line-block align-top" id="logo" src="~/img/logo.png" alt="logo" width="250" height="auto"
+                         padding="0">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link active" href="/home/index">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="/home/classes">Classes</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="/home/instructors">Instructors</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="/home/Addtionalprograms">Additional Programs</a>
+                        </li>
+
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="/home/gallery">Gallery</a>
+                        </li>
+                        <button type="submit" class="btn btn-success d-flex" id="join" onclick="location.href='@Url.Action("contact", "home")'">
+                            Contact
+                            Us
+                        </button>
+                    </ul>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid pb-3">
+            @RenderBody()
+        </div>
+
+
+    <footer class="text-center text-lg-start text-dark" style="background-color:#131313">
+
+        <div class="container text-center text-md-start mt-5 text-dark">
+            <!-- Grid row -->
+            <div class="row footer1">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <a href="#" class="navbar-brand mb-0 h1">
+                        <img class="d-line-block align-top logo-image" id="logo2" src="~/img/logo.png"
+                             alt="logo" width="250" height="auto">
+                    </a>
+
+                    <p class="text-white">
+                        Olympian Martial Arts Studio is committed to “Your Goal is Our Goal”. We believe
+                        that
+                        every person has special talents. Talents that can be unfolded or enriched through
+                        physical and mental training.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold text-white">Company</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto text-white"
+                        style="width: 60px; height: 2px" />
+
+                    <p class="text-white">
+                        <a href="#about" class="links" style="color:#d4d4d4">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#programs" class="links" style="color:#d4d4d4">Programs</a>
+                    </p>
+                    <p>
+                        <a href="#why-us" class="links" style="color:#d4d4d4">Why Us</a>
+                    </p>
+                    <p>
+                        <a href="#featured" class="links" style="color:#d4d4d4">Featured</a>
+                    </p>
+                    <p>
+                        <a href="#news" class="links" style="color:#d4d4d4">News & Blogs</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold text-white">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto text-white"
+                        style="width: 60px; height: 2px" />
+                    <p>
+                        <a href="classes.cshtml" class="links" style="color:#d4d4d4">Classes</a>
+                    </p>
+                    <p>
+                        <a href="instructors.cshtml" class="links" style="color:#d4d4d4">Instructors</a>
+                    </p>
+                    <p>
+                        <a href="additionalprograms.cshtml" class="links" style="color:#d4d4d4">Additional Programs</a>
+                    </p>
+                    <p>
+                        <a href="gallery.cshtml" class="links" style="color:#d4d4d4">Gallery</a>
+                    </p>
+                    <p>
+                        <a href="contact.cshtml" class="links" style="color:#d4d4d4">Contact Us</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold text-white">Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto text-white"
+                        style="width: 60px; height: 2px" />
+                    <p class="text-white">
+                        <i class="fa-solid fa-location-dot mr-3 p-2" style="border-radius:50px; background-color:#7f97b94e;"></i>
+                        <span class="icon-text" style="color:#d4d4d4">
+                            1920 Ellesmere Rd Unit#002 <br>(Lower Level), Scarborough,
+                            ON
+                            <br>M1H 2V6
+                        </span>
+                    </p>
+                    <p class="text-white">
+                        <i class="fa-solid fa-envelope mr-3  p-2" style="border-radius:50px; background-color:#7f97b94e;"></i>
+                        <span class="icon-text" style="color:#d4d4d4">admin@olympianmartialarts.ca</span>
+                    </p>
+                    <p class="text-white">
+                        <i class="fa-solid fa-phone mr-3 p-2" style="border-radius:50px; background-color:#7f97b94e;"></i>
+                        <span class="icon-text" style="color:#d4d4d4">+ 416-366-6661</span>
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+
+        <div class="text-center p-3 text-light">
+            <hr class="container-fluid text-white">
+            Copyright ©2023 Olympian Martial Arts Studio and Pro Shop Inc. All Rights Reserved
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
